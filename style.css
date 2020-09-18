@@ -38,4 +38,13 @@ body{
     background: rgba(255, 255, 255, 0.2);
     border-radius: 15px;
 }
+.get-lyric-button{
+    background-color: #28A745;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 30px;
+}
+.span-text{
+    font-size: 18px;
+}
 
