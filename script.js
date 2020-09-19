@@ -16,8 +16,15 @@ const getLyrics = lyrics => {
             const lyricTitle = lyric.title;
             const p = document.createElement('p');
             p.innerHTML = `
-            <span class="span-text">${lyricTitle} Album By ${artist}</span> 
-            <button onclick="loadLyricData('${artist}', '${lyricTitle}')" class ="get-lyric-button">Get Lyrics</button>
+            <div class= "container-lyrics d-flex justify-content-around align-items-center">
+                <div>
+                    <h4 class="span-text">${lyricTitle}</h4> 
+                    <p>Album By ${artist}</p>
+                </div>
+                <div>
+                    <button onclick="loadLyricData('${artist}', '${lyricTitle}')" class ="get-lyric-button">Get Lyrics</button>
+                </div>
+            </div>
             `;
             lyricData.appendChild(p);
             
